@@ -1,0 +1,135 @@
+apiVersion: v1
+clusters:
+    - cluster:
+        certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1EUXdPREUzTWpnek0xb1hEVE15TURRd05URTNNamd6TTFvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBS0FQCnJGamRjTWpiU0ZFdEJvcS90S0tiNEYxTFpsOWpZa1RYMTdDa05mSzd0RDNoY0t5UklmUm96TWFpREZZT3V4a0IKUEtHK2crVDBRWWpGaG1NRlhTekpDb2ZNWGdCdEV5Z2FwclZRMFFOWjBuUktud1FpeUh6UWs4WHJuRFBpV25VQQpraVBCbGIraTdpdStXekpvT2lQYnlrang5ZkNyVmVVS0FhRnpIeFhvOXg3eXJvSEV1ZlA0YnF6ekt5eFFEUVBPCnhkT0VQL2FBa1hBenZqSDJoZXorOG1nc0t4MHE0RnZkNE5GdHViaVJFWTFRMko0MG4zd0FOeEpoVUh2RC9rTGUKZm1NbWg4a0Z4QWJPY2Vmenl1V1Q5eEtuaW1QYmRhQUVpbElLSmxtc0wyNXJjd2tOLytnSEp4VkVhcE5CK3N6VwoweEkyNkZmMkQ3anV0WGFEdmc4Q0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZMSCt3OUdrYkgyRXpOWG9xeEhNU0ZBS1ZqbjFNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFBUTYzWTlPMkRuaG1XdmJFK3B1VlhqNkdrWk04STM2VUx2eGpFMUlLdWFBdVVFeGNWYwpuTVlVd0YvT2Z0UTgwTUp0bnJRWkVVL24xSTcxTHQ4dDNoc3JMNnE3WGJxLzBxWjF5ZjFWR2U3UVA2VVNab2dlCkxsV3BVZnRyOU53dEtRZnJXMlhJWEdLRDdmYVFoTkUxRWNic1lLT2JJbkI4amtyODEzU2ptRzFiSHZhRVY0QTMKaXRadWpMMXRTa3IyZ1pkQ1JDem92VTFuSVJHVHEwMDZEc1ZhRXlrc1lOZW9KcE1JSVo4WlVOUzNRbVdjMDRSOQplK2NhWG1ZeVV5S25GUGQ0V2VaVDlwKzVFbjZURFFGQWtqQjNtK0xyRENLSjFIa1dna3Z5Wk9pcUxnd1YwYTlECkNBN0ZvVmtjNnpDN3VhbzlSeDQwWTduSE0veVNrUkpPazNDNQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+        server: https://2F8F0BD6A8899E4E42A47D67474C9522.gr7.us-east-1.eks.amazonaws.com
+      name: arn:aws:eks:us-east-1:103413823818:cluster/pro-evolution
+    - cluster:
+        certificate-authority-data: LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM1ekNDQWMrZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJeU1ETXhPREV6TlRZME9Gb1hEVE15TURNeE5URXpOVFkwT0Zvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTUZKCjRrMXdFSUJxdit5bjllNG1xcW5pdUM2MGY0RHd4cGhzbXN4aUtOaWQyL2xGWG94RU8yclRBdjRDV1ZSR0tYSVMKVk9YQ0psa3NxNHIxcVdoUFF6NlVxdHV3QWVFVlBPVUE4OWpZTU0zeDh3aVZGVTVnV2JtSjF5ajZYWkpQcGVNZgphbkkyRnBjR0pHSkNqUVR2QzZjdWJxcGZmUWtEQmREZTlpQTg0K0dsMHZidDdOVGtSNXVMemNUTE1KdzBHU2lvCmljbC9laTh4YnJJWG5USytyQ0lTR28yMTRRREdVNUdTUCs4dmxIYkhIRGtFR2pSUGZxWlp2TlphU3BLcVdpWU8KbUFuSnRYQnNlM1ZyMzkzbHhQU2JDckVsLzdqRXNRQjd0M1NXTjR0c1I4OHVCSUs1RFEwejJtRmNpWUhQdm5PMgpjSFF4aFdNbHhEQk1yNEtld2ZrQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUE4R0ExVWRFd0VCCi93UUZNQU1CQWY4d0hRWURWUjBPQkJZRUZLYWhjVzJ4YldsUnRoS2VnQXQ1YUh5L25GQlRNQTBHQ1NxR1NJYjMKRFFFQkN3VUFBNElCQVFCS1pnclNRaE5ucUFObE1Cc3g3Z1ZYaDM1ZGdwVkU4TTBGYnY4L0UvV3o2cnFJVFprVApMS21RNUthQmg0eUZmaGtMc1QrZHpzalJsb2RjRG5FLzBiRytRN2NueXpYcWEvMzZKMmlmT3FaOGJpMEtLeDloCjJKSVI3WlZvZWhWbHRnWXY4TFI0WXhNclRDbEFoeTFJUmRhcVdaZDgwZUNvUHZYUXdRZW9qMytOaS8zVGpYdkgKdGtkbUIxdW5JcHdMZDE0dXRTeCtzN00vd1RhUVBlL1ZDd3hxMEt2Rk1JQlN2NHVqVjJPTXlQUXdFRDd2R1Qzdwphb2JNVGNSTlV4WFg3a0UycDZjU3o2WnZPNWQwQ2RXaW5tNlk3V3BLNUdLeGN3dHh3N2NJZDJycnc4TEV1OFg2Cld1akE2L0hwTU9zZEpKOXJaQ3F4MFRlM1BmK2Y1VG1ZNTJmRQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg==
+        server: https://91A2F80CD5AF0046E2FD2F78ECDBBCFE.gr7.us-east-1.eks.amazonaws.com
+      name: arn:aws:eks:us-east-1:116948010203:cluster/pro-evolution
+contexts:
+    - context:
+        cluster: arn:aws:eks:us-east-1:103413823818:cluster/pro-evolution
+        namespace: ccom-cc-assistance
+        user: cenco-ccom-prod-assistance
+      name: cenco-ccom-prod-assistance
+    - context:
+        cluster: arn:aws:eks:us-east-1:103413823818:cluster/pro-evolution
+        namespace: hermes
+        user: cenco-ccom-prod-hermes
+      name: cenco-ccom-prod-hermes
+    - context:
+        cluster: arn:aws:eks:us-east-1:116948010203:cluster/pro-evolution
+        namespace: ccom-cc-assistance
+        user: cenco-ccom-stg-assistance
+      name: cenco-ccom-stg-assistance
+    - context:
+        cluster: arn:aws:eks:us-east-1:116948010203:cluster/pro-evolution
+        namespace: hermes
+        user: cenco-ccom-stg-hermes
+      name: cenco-ccom-stg-hermes
+    - context:
+        cluster: arn:aws:eks:us-east-1:116948010203:cluster/pro-evolution
+        namespace: hermes-dev
+        user: cenco-ccom-stg-hermes-dev
+      name: cenco-ccom-stg-hermes-dev
+current-context: cenco-ccom-prod-hermes
+kind: Config
+preferences: {}
+users:
+    - name: cenco-ccom-prod-assistance
+      user:
+        exec:
+            apiVersion: client.authentication.k8s.io/v1beta1
+            args:
+                - --region
+                - us-east-1
+                - eks
+                - get-token
+                - --cluster-name
+                - pro-evolution
+                - --output
+                - json
+            command: aws
+            env:
+                - name: AWS_PROFILE
+                  value: cenco-ccom-prod-assistance
+            interactiveMode: IfAvailable
+            provideClusterInfo: false
+    - name: cenco-ccom-prod-hermes
+      user:
+        exec:
+            apiVersion: client.authentication.k8s.io/v1beta1
+            args:
+                - --region
+                - us-east-1
+                - eks
+                - get-token
+                - --cluster-name
+                - pro-evolution
+                - --output
+                - json
+            command: aws
+            env:
+                - name: AWS_PROFILE
+                  value: cenco-ccom-prod-hermes
+            interactiveMode: IfAvailable
+            provideClusterInfo: false
+    - name: cenco-ccom-stg-assistance
+      user:
+        exec:
+            apiVersion: client.authentication.k8s.io/v1beta1
+            args:
+                - --region
+                - us-east-1
+                - eks
+                - get-token
+                - --cluster-name
+                - pro-evolution
+                - --output
+                - json
+            command: aws
+            env:
+                - name: AWS_PROFILE
+                  value: cenco-ccom-stg-assistance
+            interactiveMode: IfAvailable
+            provideClusterInfo: false
+    - name: cenco-ccom-stg-hermes
+      user:
+        exec:
+            apiVersion: client.authentication.k8s.io/v1beta1
+            args:
+                - --region
+                - us-east-1
+                - eks
+                - get-token
+                - --cluster-name
+                - pro-evolution
+                - --output
+                - json
+            command: aws
+            env:
+                - name: AWS_PROFILE
+                  value: cenco-ccom-stg-hermes
+            interactiveMode: IfAvailable
+            provideClusterInfo: false
+    - name: cenco-ccom-stg-hermes-dev
+      user:
+        exec:
+            apiVersion: client.authentication.k8s.io/v1beta1
+            args:
+                - --region
+                - us-east-1
+                - eks
+                - get-token
+                - --cluster-name
+                - pro-evolution
+                - --output
+                - json
+            command: aws
+            env:
+                - name: AWS_PROFILE
+                  value: cenco-ccom-stg-hermes-dev
+            interactiveMode: IfAvailable
+            provideClusterInfo: false

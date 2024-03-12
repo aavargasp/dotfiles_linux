@@ -1,0 +1,45 @@
+Host *
+    IdentityAgent ~/.1password/agent.sock
+
+### GitHub Config ###
+# Personal account
+Host github.com
+    HostName ssh.github.com
+    User git
+    Port 443
+    PreferredAuthentications publickey
+	
+# Work account
+Host github.cenco
+    HostName ssh.github.com
+    User git
+    Port 443
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_ed25519_cenco.pub
+
+### GitLab Config ###
+# Personal account
+Host gitlab.com
+    HostName altssh.gitlab.com
+    User git
+    Port 443
+    PreferredAuthentications publickey
+
+# Work account
+Host gitlab.cenco
+    HostName altssh.gitlab.com
+    User git
+    Port 443
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_ed25519_cenco.pub
+ 
+### Servers ####
+Host vultr.docker
+	HostName 155.138.160.11
+	User root
+
+Host aws.ec2.games
+	HostName 3.237.63.204
+	User ec2-user
+    PreferredAuthentications publickey
+    IdentityFile ~/.ssh/id_ed25519_aws.pub

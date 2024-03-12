@@ -1,0 +1,52 @@
+[default]
+region = us-east-1
+output = json
+
+[sso-session cenco-sso]
+sso_start_url = https://d-90675d22db.awsapps.com/start#
+sso_region = us-east-1
+sso_registration_scopes = sso:account:access
+
+[profile cenco-ccom-stg]
+region = us-east-1
+output = json
+sso_session = cenco-sso
+sso_account_id = 116948010203
+sso_role_name = CencoCencommerceDeveloper
+
+[profile cenco-ccom-stg-assistance]
+region = us-east-1
+output = json
+source_profile = cenco-ccom-stg
+role_arn = arn:aws:iam::116948010203:role/EKSDefaultPolicyFor-Ccom-Cc-Assistance
+
+[profile cenco-ccom-prod-assistance]
+region = us-east-1
+output = json
+source_profile = cenco-ccom-prod
+role_arn = arn:aws:iam::103413823818:role/EKSDefaultPolicyFor-Ccom-Cc-Assistance
+
+[profile cenco-ccom-stg-hermes]
+region = us-east-1
+output = json
+source_profile = cenco-ccom-stg
+role_arn = arn:aws:iam::116948010203:role/EKSDefaultPolicyFor-Hermes
+
+[profile cenco-ccom-stg-hermes-dev]
+region = us-east-1
+output = json
+source_profile = cenco-ccom-stg
+role_arn = arn:aws:iam::116948010203:role/EKSDefaultPolicyFor-Hermes-Dev
+
+[profile cenco-ccom-prod]
+region = us-east-1
+output = json
+sso_session = cenco-sso
+sso_account_id = 103413823818
+sso_role_name = CencoCencommerceDeveloper
+
+[profile cenco-ccom-prod-hermes]
+region = us-east-1
+output = json
+source_profile = cenco-ccom-prod
+role_arn = arn:aws:iam::103413823818:role/EKSDefaultPolicyFor-Hermes
